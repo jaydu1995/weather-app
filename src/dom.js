@@ -22,19 +22,19 @@ const DOMHandler = () => {
     feelsLike.value = weather.feelslike;
 
     temperature.innerHTML = Math.round(weather.temperature) + "&#176F";
-    feelsLike.innerHTML = Math.round(weather.temperature) + "&#176F";
+    feelsLike.innerHTML = "Feels like: " + Math.round(weather.feelslike) + "&#176F";
 
     checkDayOrNight(weather);
   }
 
   function displayTemperatureF(weather) {
     temperature.innerHTML = weather.temperature + "&#176F";
-    feelsLike.innerHTML = weather.temperature + "&#176F";
+    feelsLike.innerHTML = "Feels like: " + weather.feelslike + "&#176F";
   }
 
   function displayTemperatureC(weather) {
     temperature.innerHTML = weather.temperature + "&#176C";
-    feelsLike.innerHTML = weather.temperature + "&#176C";
+    feelsLike.innerHTML = "Feels like: " + weather.feelslike + "&#176C";
   }
 
   function displayError() {

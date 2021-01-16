@@ -5,7 +5,6 @@ const EventHandler = app => {
   const toggleBtn = document.querySelector(".toggle");
 
   submitBtn.addEventListener('click', () => {
-    console.log(app.isFahrenheit);
     app.update(input.value)
   })
 
@@ -15,7 +14,6 @@ const EventHandler = app => {
     } else {
       app.changeToFahrenheit();
     }
-    console.log(app.isFahrenheit)
   })
 
 }

@@ -74,10 +74,12 @@ const App = () => {
 
   function convertToCelsius() {
     weather.temperature = Math.round((weather.temperature - 32) / 1.8);
+    weather.feelslike = Math.round((weather.feelslike - 32) / 1.8);
   }
 
   function convertToFarenheit() {
     weather.temperature = Math.round(weather.temperature * 1.8 + 32.0);
+    weather.feelslike = Math.round(weather.feelslike * 1.8 + 32.0);
   }
 
   function changeToCelsius() {
