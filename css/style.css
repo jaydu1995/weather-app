@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+  font-family: 'Lato', sans-serif;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+:-moz-placeholder {
+   font-style: italic;  
+}
+::-moz-placeholder {
+   font-style: italic;  
+}
+:-ms-input-placeholder {  
+   font-style: italic; 
+}
+
+.container {
+  margin: 0 auto;
+  /* margin-top: 50px; */
+  width: 100%;
+  text-align: center;
+}
+
+.toggle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+  /* border: none; */
+  border-radius: 30px;
+  background: none;
+  cursor: pointer;
+  color: black;
+  width: 45px;
+  letter-spacing: 1px;
+
+}
+
+.submit {
+  display: inline-block;
+  /* border-radius: 10px; */
+  background: black;
+  color: white;
+  border: 1px solid black;
+  width: 25px;
+  float: left;
+  height: 25px;
+}
+
+.search-container {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.city-name {
+  margin-top: 20px;
+}
+
+.weather {
+  margin-top: 10px;
+}
+
+.weather-info-container {
+  margin-top: 40px;
+}
+
+.temperature {
+  margin-top: 10px;
+}
+
+.city-name, .temperature {
+  font-weight: 300;
+}
+
+.weather-extra {
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.extra {
+  margin-bottom: 5px;
+}
+
+.submit:focus {
+  outline: none;
+}
+
+input {
+  /* border-radius: 20px;  */
+  outline: none;
+  border: none;
+  text-indent: 10px;
+  float: left;
+  height: 25px;
+}
+
+.wi {
+  margin-top: 10px;
+  font-size: 80px;
+}
+
+.toggle:focus {
+  outline: none;
+}
+
+.error {
+  /* display: none; */
+  background-color: red;
+  display: none;
+  width: 202px;
+  font-size: 15px;
+  margin-top: 25px;
+  padding-left: 5px;
+  padding-top: 3px;
+  color: black;
+  height: 25px;
+}
+
+.shake {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.extra {
+  font-size: 15px;
+}
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@media only screen and (min-height: 640px) {
+  /* .container { */
+  /*   margin-top: 100px; */
+  /* } */
+  .city-name {
+    font-size: 50px;
+  }
+
+  .input {
+    width: 300px;
+  }
+
+  .weather-info-container {
+    margin-top: 150px;
+  }
+
+  .wi {
+    font-size: 90px;
+  }
+
+  .temperature {
+    font-size: 25px;
+  }
+
+  .extra {
+    font-size: 18px;
+  }
+
+  .weather {
+    font-size: 30px;
+  }
+  /* on iphone4 set wi icon to 65px */
+  /* on iphonex set weather header to 50px; */
+}
+
+@media only screen and (max-height: 480px) {
+  .wi {
+    font-size: 65px;
+  }
+
+}
